@@ -1,0 +1,13 @@
+
+ 27/05/16 00:32:09
+ Client {sum: 510.00 hrn, paint: 50.0, oxy: 150.0, blond: 10.0, hair length: 2, drying: true}
+..............---->>
+ 27/05/16 00:32:13
+ Client {sum: 570.00 hrn, paint: 50.0, oxy: 150.0, blond: 10.0, hair length: 3, drying: true}
+..............---->>
+ 27/05/16 00:32:15
+ Client {sum: 570.00 hrn, paint: 50.0, oxy: 150.0, blond: 10.0, hair length: 3, drying: true}
+..............---->>
+ 27/05/16 00:32:21
+ Client {sum: 492.00 hrn, paint: 70.0, oxy: 150.0, blond: 10.0, hair length: 1, drying: true}
+..............---->>

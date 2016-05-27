@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" spacing="7.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="banner" fitHeight="90.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Pictures/bannerZefirPaint.png" />
+               </image></ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="25.0">
+         <children>
+            <Label text="Длина волос">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="firstRadioButton" mnemonicParsing="false" onAction="#getSelectedHairLength" selected="true" text="1">
+               <toggleGroup>
+                  <ToggleGroup fx:id="hairLengthToggle" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="secondRadioButton" mnemonicParsing="false" onAction="#getSelectedHairLength" text="2" toggleGroup="$hairLengthToggle" />
+            <RadioButton fx:id="thirdRadioButton" mnemonicParsing="false" onAction="#getSelectedHairLength" text="3" toggleGroup="$hairLengthToggle" />
+         </children>
+         <opaqueInsets>
+            <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label text="Количество краски">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pText" promptText="0" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label text="Количество окси">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="oxiText" promptText="0" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Label text="Количество блондерана">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="blondText" promptText="0" text="0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="120.0" prefWidth="200.0" spacing="25.0">
+         <children>
+            <JFXCheckBox fx:id="dryCheck" checkedColor="#249ca4" onAction="#checkIfDry" text="Сушка" unCheckedColor="#249ca4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXCheckBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="450.0">
+         <children>
+            <Button fx:id="resultButton" mnemonicParsing="false" onAction="#resultButtonClicked" prefHeight="120.0" prefWidth="450.0" text="Посчитать">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Результат:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="resultText">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></Label>
+         </children>
+      </VBox>
+   </children>
+   <opaqueInsets>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </opaqueInsets>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</VBox>
